@@ -11,7 +11,28 @@
 
 > 在 Codex 聊天里查自己的 iSpace 课程、作业和课件，接收截止提醒，按年级、学期和课程把课件存到 Windows。
 
-**安装包** [下载 v7 ZIP](ispace-assistant-v7.zip?raw=true) · [SHA-256](ispace-assistant-v7.zip.sha256)
+**安装包** [下载 v7 ZIP](https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v7.zip) · [SHA-256](ispace-assistant-v7.zip.sha256)
+
+---
+
+## 安装提示词
+
+在桌面版 Codex 的新聊天里复制发送下面整段，可以从下载开始。
+
+```text
+请帮我在这台 Windows 电脑上下载并配置 iSpace 助手 v7。安装包直链如下。
+https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v7.zip
+
+请下载 ZIP 到我的「下载」目录，解压到一个新文件夹，保留解压后的目录结构。找到 ispace-assistant 文件夹，阅读其中的 README.md 和同级 ispace-site/README.md，按说明继续配置。
+
+请用我自己的账号建立仅我本人可访问的私人 Sites，连接我的 iSpace 课程，完成首次同步并打开首次设置窗口。按我选的设置配置作业提醒和所需的本机组件。
+
+需要学校登录、填写 iSpace 服务令牌或确认 Chrome 权限时，请告诉我具体在哪个页面操作，等我完成后继续。学校令牌由我填写到 Sites 设置的 Secret 字段。
+
+最后请查一次我最近的作业，确认课程同步和后台提醒可用。如果我开启了本机下载，再试下载一份课件并告诉我保存路径。
+
+如果当前聊天无法下载文件到这台电脑，请给我上面的直链，并指出解压后在桌面版 Codex 里要打开的 ispace-assistant 文件夹。
+```
 
 ---
 
@@ -27,6 +48,7 @@
 
 ## 目录
 
+- [安装提示词](#安装提示词)
 - [文件结构](#文件结构)
 - [部署与运行](#部署与运行)
 - [核心功能](#核心功能)
