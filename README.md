@@ -1,7 +1,7 @@
 # iSpace 助手
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Package-v7-blue?style=flat-square" alt="Package v7"/>
+  <img src="https://img.shields.io/badge/Package-v8-blue?style=flat-square" alt="Package v8"/>
   <img src="https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square" alt="Windows"/>
   <img src="https://img.shields.io/badge/Browser-Chrome-orange?style=flat-square&logo=googlechrome" alt="Chrome"/>
   <img src="https://img.shields.io/badge/Node.js-22.13%2B-green?style=flat-square&logo=nodedotjs" alt="Node.js 22.13+"/>
@@ -11,7 +11,7 @@
 
 > 在 Codex 聊天里查自己的 iSpace 课程、作业和课件，接收截止提醒，按年级、学期和课程把课件存到 Windows。
 
-**安装包** [下载 v7 ZIP](https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v7.zip) · [SHA-256](ispace-assistant-v7.zip.sha256)
+**安装包** [下载 v8 ZIP](https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v8.zip) · [SHA-256](ispace-assistant-v8.zip.sha256)
 
 ---
 
@@ -20,10 +20,10 @@
 在桌面版 Codex 的新聊天里复制发送下面整段，可以从下载开始。
 
 ```text
-请帮我在这台 Windows 电脑上下载并配置 iSpace 助手 v7。安装包直链如下。
-https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v7.zip
+请帮我在这台 Windows 电脑上下载并配置 iSpace 助手 v8。安装包直链如下。
+https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v8.zip
 
-请在我的「下载」目录创建 iSpace-assistant-v7 文件夹，下载 ZIP 并解压到该目录，保留解压后的目录结构。若已经有一份已核对的安装，请复用它。
+请在我的「下载」目录创建 iSpace-assistant-v8 文件夹，下载 ZIP 并解压到该目录，保留解压后的目录结构。若已经有一份已核对的安装，请复用它。
 
 将解压后的 ispace-assistant 文件夹添加为桌面版 Codex 的本地项目。使用可用的项目与聊天操作，在此项目中创建或复用主聊天，命名为「ispace助手」，打开并置顶它。已有主聊天时继续使用；如果这次聊天已在该项目里，可以直接把它设为主聊天。请在主聊天接续安装，阅读 ispace-assistant/README.md 和同级 ispace-site/README.md。
 
@@ -37,7 +37,7 @@ https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistan
 
 换班时，按本项目 WORKFLOW.md 的门槛和安全条件核对主副聊天。先处理已有交接。有待接续的工作且运行时允许创建时，按交接编号在同一项目新建一位候选，复用已登记候选。候选核对任务、负责人、文件版本和下一步并确认接班，随后才切换负责人。即使当轮未到作业巡检时间，也继续处理已有交接。
 
-确有积压、现有聊天来不及处理时，由主聊天最多增开一个临时「后台检查与分工」聊天，协助核对和安排分工。临时聊天无需单独开定时，忙完后先把结果交给主聊天，再按 Codex 的确认流程及时删除该临时聊天。确认未完成时先归档。把这条规则和长期记忆的归属补到本地项目的 AGENTS.md，让接班的主聊天也能沿用。
+确有积压、现有聊天来不及处理时，由主聊天最多增开一个临时「后台检查与分工」聊天，协助核对和安排分工。临时聊天无需单独开定时，忙完后先把结果交给主聊天，再按 Codex 的确认流程及时删除该临时聊天。确认未完成时先归档。v8 包内 AGENTS.md 已包含这条规则和长期记忆的归属。沿用 v7 安装时补到本地项目的 AGENTS.md，让接班的主聊天也能沿用。
 
 切换后按账本名称给新旧聊天改名。主聊天换班时，通过桌面版 Codex 的侧栏操作置顶新主聊天、取消旧主聊天置顶，并回读确认。按旧聊天 ID 暂停并核对它专属的 iSpace 定时，固定后台聊天的巡检继续运行。按我的偏好保留或归档旧聊天，首次默认保留。核对以上结果后，才在运行时登记交接完成。客户端缺少所需操作时，保留同一交接编号，把待办发给当前主聊天，后续继续核对。
 
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistan
 ## 文件结构
 
 ```text
-iSpace-assistant-v7/
+iSpace-assistant-v8/
 ├── README.md              # 快速入口和部署说明索引
 ├── ispace-site/           # 私人站点源码和部署手册
 ├── ispace-assistant/      # 首次设置、作业提醒和聊天交接
@@ -93,7 +93,7 @@ iSpace-assistant-v7/
 1. **打开助手项目。** 解压完整安装包，在桌面版 Codex 把 `ispace-assistant` 打开为本地项目。将一站式设置说明（包内 `ispace-assistant/README.md`）里的配置指令发到新聊天。
 2. **部署私人站点。** 用 `ispace-site` 建立仅本人可访问的站点、设置运行参数并发布。学校令牌填入 Sites 设置的 Secret 字段。 私人站点部署（包内 `ispace-site/README.md`）
 3. **连接学校账号。** 在自己站点的 `/setup` 选择课程，完成首次同步，再连接该站点生成的 Codex 插件。
-4. **完成首次设置。** 填姓名和学号，确认是否下载到电脑、检查间隔和作业提醒。助手登记主副聊天、应用后台巡检并核对状态。
+4. **完成首次设置。** 填姓名和学号，确认是否下载到电脑、检查间隔和作业提醒。按包内说明登记主副聊天，将巡检定时绑定到一个固定后台聊天并核对状态。
 5. **试下载并核对。** 开启本机下载时，安装 Windows 文件助手和 Chrome 课件扩展，配对站点后试下载一份课件。 本机下载组件（包内 `ispace-course-local/README.md`）
 
 ### 查看配置进度
