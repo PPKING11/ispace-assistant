@@ -1,7 +1,7 @@
 # iSpace 助手
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Package-v8-blue?style=flat-square" alt="Package v8"/>
+  <img src="https://img.shields.io/badge/Package-v9-blue?style=flat-square" alt="Package v9"/>
   <img src="https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square" alt="Windows"/>
   <img src="https://img.shields.io/badge/Browser-Chrome-orange?style=flat-square&logo=googlechrome" alt="Chrome"/>
   <img src="https://img.shields.io/badge/Node.js-22.13%2B-green?style=flat-square&logo=nodedotjs" alt="Node.js 22.13+"/>
@@ -11,7 +11,7 @@
 
 > 在 Codex 聊天里查自己的 iSpace 课程、作业和课件，接收截止提醒，按年级、学期和课程把课件存到 Windows。
 
-**安装包** [下载 v8 ZIP](https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v8.zip) · [SHA-256](ispace-assistant-v8.zip.sha256)
+**安装包** [下载 v9 ZIP](https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v9.zip) · [SHA-256](ispace-assistant-v9.zip.sha256)
 
 ---
 
@@ -20,10 +20,10 @@
 在桌面版 Codex 的新聊天里复制发送下面整段，可以从下载开始。
 
 ```text
-请帮我在这台 Windows 电脑上下载并配置 iSpace 助手 v8。安装包直链如下。
-https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v8.zip
+请帮我在这台 Windows 电脑上下载并配置 iSpace 助手 v9。安装包直链如下。
+https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistant-v9.zip
 
-请在我的「下载」目录创建 iSpace-assistant-v8 文件夹，下载 ZIP 并解压到该目录，保留解压后的目录结构。若已经有一份已核对的安装，请复用它。
+请在我的「下载」目录创建 iSpace-assistant-v9 文件夹，下载 ZIP 并解压到该目录，保留解压后的目录结构。若已经有一份已核对的安装，请复用它。
 
 将解压后的 ispace-assistant 文件夹添加为桌面版 Codex 的本地项目。使用可用的项目与聊天操作，在此项目中创建或复用主聊天，命名为「ispace助手」，打开并置顶它。已有主聊天时继续使用；如果这次聊天已在该项目里，可以直接把它设为主聊天。请在主聊天接续安装，阅读 ispace-assistant/README.md 和同级 ispace-site/README.md。
 
@@ -31,13 +31,13 @@ https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistan
 
 请用我自己的账号建立仅我本人可访问的私人 Sites，连接我的 iSpace 课程，完成首次同步并打开首次设置窗口。按我选的设置配置作业提醒和所需的本机组件。
 
-需要学校登录、填写 iSpace 服务令牌或确认 Chrome 权限时，请告诉我具体在哪个页面操作，等我完成后继续。学校令牌由我填写到 Sites 设置的 Secret 字段。
+请阅读 ispace-assistant/ispace-login/README.md。创建自己的私人 Sites 后，请打开本机登录工具，由我本人输入学校账号密码，取得授权后由我本人粘贴进私人 Sites 的 ISPACE_TOKEN 密钥字段并保存。密码和令牌不发进聊天。若电脑缺少 Python 3 或 tkinter，请说明如何从 Python 官方渠道安装。学校登录成功后按提示完成站点部署和首次课程同步。此登录流程已通过模拟测试，第二个学校账号的真实完整流程尚待验收。
 
 首次设置保存后，在同一项目创建或复用副聊天「默默工作的后台员工」，按包内 ispace-assistant/README.md 登记主副聊天。再创建或复用一个固定的「ispace助手｜后台检查与交接」聊天，作为第三个日常入口。这个聊天专门巡检，主副聊天换班时继续使用。在该聊天里设置一项「在现有聊天中运行」的本机定时，每次回到同一聊天。已有绑定到该聊天的定时就沿用。按此方式设置包内 README 和 AUTOMATION.md 提到的后台定时。将实际安装目录和下方规则写进定时提示词。每次按包内 AUTOMATION.md 核对本项目的任务、已开启的提醒和下载设置，从 state.json 查找当前主聊天并向它发送结果。固定后台只负责操作，每次从共享账本核对现状。用户决定、需要接续的结果和长期记忆交给主聊天，固定后台不单独保存长期记忆。
 
 换班时，按本项目 WORKFLOW.md 的门槛和安全条件核对主副聊天。先处理已有交接。有待接续的工作且运行时允许创建时，按交接编号在同一项目新建一位候选，复用已登记候选。候选核对任务、负责人、文件版本和下一步并确认接班，随后才切换负责人。即使当轮未到作业巡检时间，也继续处理已有交接。
 
-确有积压、现有聊天来不及处理时，由主聊天最多增开一个临时「后台检查与分工」聊天，协助核对和安排分工。临时聊天无需单独开定时，忙完后先把结果交给主聊天，再按 Codex 的确认流程及时删除该临时聊天。确认未完成时先归档。v8 包内 AGENTS.md 已包含这条规则和长期记忆的归属。沿用 v7 安装时补到本地项目的 AGENTS.md，让接班的主聊天也能沿用。
+确有积压、现有聊天来不及处理时，由主聊天最多增开一个临时「后台检查与分工」聊天，协助核对和安排分工。临时聊天无需单独开定时，忙完后先把结果交给主聊天，再按 Codex 的确认流程及时删除该临时聊天。确认未完成时先归档。v9 包内 AGENTS.md 已包含这条规则和长期记忆的归属。沿用 v7 安装时补到本地项目的 AGENTS.md，让接班的主聊天也能沿用。
 
 切换后按账本名称给新旧聊天改名。主聊天换班时，通过桌面版 Codex 的侧栏操作置顶新主聊天、取消旧主聊天置顶，并回读确认。按旧聊天 ID 暂停并核对它专属的 iSpace 定时，固定后台聊天的巡检继续运行。按我的偏好保留或归档旧聊天，首次默认保留。核对以上结果后，才在运行时登记交接完成。客户端缺少所需操作时，保留同一交接编号，把待办发给当前主聊天，后续继续核对。
 
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/PPKING11/ispace-assistant/main/ispace-assistan
 ## 文件结构
 
 ```text
-iSpace-assistant-v8/
+iSpace-assistant-v9/
 ├── README.md              # 快速入口和部署说明索引
 ├── ispace-site/           # 私人站点源码和部署手册
 ├── ispace-assistant/      # 首次设置、作业提醒和聊天交接
@@ -88,10 +88,10 @@ iSpace-assistant-v8/
 
 ## 部署与运行
 
-> **环境要求** Windows、Chrome、Git、Node.js 22.13 或更新版本、能使用 Sites 的桌面版 Codex 账号，以及学校为本人开通的 iSpace 服务令牌。
+> **环境要求** Windows、Chrome、Git、Node.js 22.13 或更新版本、能使用 Sites 的桌面版 Codex 账号、Python 3（含 tkinter），以及允许使用 Moodle 移动端的学校账号。
 
 1. **打开助手项目。** 解压完整安装包，在桌面版 Codex 把 `ispace-assistant` 打开为本地项目。将一站式设置说明（包内 `ispace-assistant/README.md`）里的配置指令发到新聊天。
-2. **部署私人站点。** 用 `ispace-site` 建立仅本人可访问的站点、设置运行参数并发布。学校令牌填入 Sites 设置的 Secret 字段。 私人站点部署（包内 `ispace-site/README.md`）
+2. **部署私人站点。** 用 `ispace-site` 建立仅本人可访问的站点、设置运行参数并发布。按包内 ispace-assistant/ispace-login/README.md 打开本机登录工具，由本人把取得的学校授权填入 Sites 设置的 Secret 字段。 私人站点部署（包内 `ispace-site/README.md`）
 3. **连接学校账号。** 在自己站点的 `/setup` 选择课程，完成首次同步，再连接该站点生成的 Codex 插件。
 4. **完成首次设置。** 填姓名和学号，确认是否下载到电脑、检查间隔和作业提醒。按包内说明登记主副聊天，将巡检定时绑定到一个固定后台聊天并核对状态。
 5. **试下载并核对。** 开启本机下载时，安装 Windows 文件助手和 Chrome 课件扩展，配对站点后试下载一份课件。 本机下载组件（包内 `ispace-course-local/README.md`）
